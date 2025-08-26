@@ -6,4 +6,7 @@ hobby = str(input("Enter your favorite hobby: "))
 message = f"Hello {name}. You're {age} years old. Your hobby is {hobby}."
 print(message)
 
-Path("greetings.txt").write_text(message + "\n", encoding="UTF-8")
+#Path("greetings.txt").write_text(message + "\n", encoding="UTF-8")
+##open("gettings.txt", "x")
+with open("greetings.txt", "w") as f:
+    f.write(message)

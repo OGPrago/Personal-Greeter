@@ -8,5 +8,5 @@ print(message)
 
 #Path("greetings.txt").write_text(message + "\n", encoding="UTF-8")
 ##open("gettings.txt", "x")
-with open("greetings.txt", "w") as f:
+with open(f"{name}'s Greetings.txt", "w") as f:
     f.write(message)
